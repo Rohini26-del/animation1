@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+   
+       *{
+        margin: 0;
+        padding: 0;
+       }
+        
+    
+.box{
+        height: 50px;
+          border: white;
+            overflow: hidden;
+            font-size: 40px;
+            border-bottom: 2px solid black;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 1000;
+
+        }
+        h2{
+            animation:text 3s ease-in infinite ;
+        }
+        
+        @keyframes text{
+            0%{
+                transform: translateY(0);
+            }
+            25%{
+                transform: translateY(-100%);
+            } 50%{
+                transform: translateY(-200%);
+            } 75%{
+                transform: translateY(-300%);
+            } 100%{
+                transform: translateY(-400%);
+            }
+        }
+      .container {
+        align-items: center;
+        /* background-color: navy; */
+      }
+      .container div {
+        height: 250px;
+        width: 450px;
+        border: 2px solid rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 20px;
+        justify-items: center;
+        align-content: center;
+        background-color: rgb(46, 44, 44);
+        color: white;
+        border-radius: 20px;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+
+        animation: card 3s linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 50%;
+      }
+      
+     
+      @keyframes card {
+    
+
+        from{
+                opacity: 0;
+                clip-path: inset( 0 100%  0  100% );
+                /* transform: scale(0.5); */
+                transform: translateX(-250px);
+
+            }
+            to{
+                opacity: 1;
+                transform: scale(1);
+                transform: translateX(0);
+                clip-path: inset(0 0 0 100);
+
+
+            }
+           
+      }
+      @keyframes rotate{
+        from{
+            
+        }
+        to{
+            transform: rotate(360deg);
+        }
+      }
+      h1{
+        z-index: 10px;
+      }
+    </style>
+  </head>
+  <body>
+       
+<div class="box">
+    <div><h2>Frontend developer </h1> </div>
+    <div><h2>Web developer</h1></div>
+    <div><h2>Python</h1></div>
+    <div><h2>Java</h1></div>
+    <div><h2>Css</h1></div>
+</div>
+   
+    
+
+    <div class="container">
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3532/3532701.png" alt="" height="100" width="100">
+        <h1>Hello I am Rohini Dusane</h1>
+      </div>
+
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3532/3532701.png" alt="" height="100" width="100">
+        <h1>Hello I am Rohini Dusane</h1>
+      </div>
+
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3532/3532701.png" alt="" height="100" width="100">
+        <h1>Hello I am Rohini Dusane</h1>
+      </div>
+
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3532/3532701.png" alt="" height="100" width="100">
+        <h1>Hello I am Rohini Dusane</h1>
+      </div>
+
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3532/3532701.png" alt="" height="100" width="100">
+        <h1>Hello I am Rohini Dusane</h1>
+      </div>
+    </div>
+    <a href="../Annimatin-advances/animation.html">go to next</a>
+  </body>
+</html>
